@@ -115,3 +115,23 @@ button2.draw(win)
 button3 = button1.clone()
 button3.move(0, 40)
 button3.draw(win)
+
+#make the green of a tree
+
+tree = Polygon(Point(325, 400), Point(575, 400), Point(510, 300), Point(540, 300), Point(475, 200), Point(500, 200), Point(450, 100), Point(400, 200), Point(425, 200), Point(360, 300), Point(390, 300))
+tree.setFill("green")
+tree.draw(win)
+
+#make a tree trunk
+
+trunk = Polygon(Point(410, 500), Point(490, 500), Point(480, 400), Point(420, 400))
+trunk.setFill("brown")
+trunk.draw(win)
+
+#draw ball on top of tree
+
+center = Point(450, 90)
+ball = Circle(center, 20)
+ball.setFill("yellow")
+ball.setOutline("red")
+ball.draw(win)
